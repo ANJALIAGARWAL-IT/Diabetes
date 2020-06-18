@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Diabetes Predictor</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">DIABETES PREDICTION</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App using Flask and Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="Pregnancies" placeholder="Pregnancies eg- 5"><br>
+                <input class="form-input" type="text" name="Glucose" placeholder="Glucose (mg/dL) eg- 120"><br>
+                <input class="form-input" type="text" name="BloodPressure" placeholder="Blood Pressure (mmHg) eg- 60"><br>
+                <input class="form-input" type="text" name="SkinThickness" placeholder="Skin Thickness (mm) eg- 40"><br>
+                <input class="form-input" type="text" name="Insulin" placeholder="Insulin Level (IU/mL) eg- 50"><br>
+                <input class="form-input" type="text" name="BMI" placeholder="Body Mass Index (kg/m²) eg- 30.2"><br>
+                <input class="form-input" type="text" name="DPF" placeholder="Diabetes Pedigree Function (DPF) eg- 0.61"><br>
+                <input class="form-input" type="text" name="Age" placeholder="Age (years) eg. 34"><br>
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/ANJALIAGARWAL-IT"><i class="fab fa-github fa-lg contact-icon"></i></a>
+              <a target="_blank" href="https://in.linkedin.com/in/anjaliagarwal98"><i class="fab fa-linkedin fa-lg contact-icon"></i></a> 
+           </div>
+           <p class='footer-description'>Anjali Agarwal.</p>
+       </div>
+
+    </body>
+</html>
