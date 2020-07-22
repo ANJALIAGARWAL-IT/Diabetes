@@ -4,8 +4,10 @@ html{
 }
 
 body{
-	font-family:  Helvetica,sans-serif, Arial;
-    text-align: center;
+	
+	font-family: sans-serif;
+	background: url("https://imgur.com/vORutju.jpg") center center fixed;
+	text-align: center;
     margin: 0;
     padding: 0;
     width: 100%;
